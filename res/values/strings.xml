@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyZombiePet</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_string_happy">Happy</string>
+    <string name="text_string_angry">Angry</string>
+    <string name="text_string_status">Status:</string>
+    <string name="text_button_feed">Feed</string>
+    <string name="text_button_photo">Take Photo</string>
+    <string name="text_button_stats">Stats</string>
+    <string name="text_string_hungry">Hungry</string>
+    <string name="text_string_full">Full</string>
+    <string name="text_string_rested">Rested</string>
+    <string name="text_string_tired">Tired</string>
+    <string name="text_string_inventory">Inventory:</string>
+    <string name="title_activity_main">My Zombie Pet</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_string_inventory">Inventory</string>
+    <string name="title_stats_fragment">Stats</string>
+    <string name="title_store_fragment">Store</string>
+    <string name="stats_string_happy_bonus">Happy Bonus:</string>
+    <string name="stats_string_hunger_bonus">Hunger Bonus:</string>
+    <string name="stats_string_tired_bonus">Tired Bonus:</string>
+    <string name="stats_string_times_petted">Times Petted:</string>
+    <string name="stats_string_times_fed">Times Fed:</string>
+    <string name="stat_string_toys_purchased">Toys Purchased</string>
+    <string name="stats_string_bonuses_title">Bonuses</string>
+    <string name="stats_string_stats_title">Statistics</string>
+    <string name="stats_string_achievements_title">Achievements</string>
+    <string name="stats_string_petting_bonus">Petting Bonus: </string>
+    <string name="title_activity_game_over">T_T Game Over T_T</string>
+    <string name="title_activity_set_free">Free Zombie</string>
+    <string name="title_activity_opening">OpeningActivity</string>
+
+</resources>

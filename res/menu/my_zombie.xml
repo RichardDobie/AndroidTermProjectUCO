@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_item_set_free" 
+        android:title="Set Free" 
+        android:titleCondensed="Free"></item>
+    <item android:id="@+id/menu_item_save" android:title="Save Game" android:titleCondensed="Save"></item>
+    <item android:id="@+id/menu_item_speed" android:title="Speed">
+        <menu>
+            <item android:id="@+id/menu_item_speed_slow" android:title="Slow"/>
+            <item android:id="@+id/menu_item_speed_medium" android:title="Medium"/>
+            <item android:id="@+id/menu_item_speed_fast" android:title="Fast"/>
+        </menu>
+    </item>
+
+</menu>

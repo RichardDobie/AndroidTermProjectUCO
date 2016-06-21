@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ZombieLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MyZombieFragment" >
+	
+	<TextView
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ZombieView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_string_status"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+    <TableLayout
+        android:id="@+id/StatusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_status">
+    <TableRow >
+
+        <TextView
+            android:id="@+id/text_angry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_string_angry" />
+
+        <ProgressBar
+            android:id="@+id/happy_sad_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.22"
+            android:indeterminate="false"
+            android:progress="@android:integer/config_shortAnimTime" />
+
+        <TextView
+            android:id="@+id/text_happy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_string_happy" />
+    </TableRow>
+    
+    <TableRow>
+
+        <TextView
+            android:id="@+id/text_Hungry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_string_hungry" />
+
+        <ProgressBar
+            android:id="@+id/Hunger_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.21"
+            android:indeterminate="false"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/text_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_string_full" />
+    </TableRow>
+    
+    <TableRow>
+
+        <TextView
+            android:id="@+id/text_tired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_string_tired" />
+
+        <ProgressBar
+            android:id="@+id/tired_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.22"
+            android:indeterminate="false"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/text_rested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_string_rested" />
+        
+    </TableRow>
+    
+    </TableLayout>
+    
+    <TextView
+	    android:id="@+id/text_inventory"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/StatusLayout"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="20dp"
+	    android:text="@string/text_string_inventory"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@id/text_inventory"
+	    android:layout_marginTop="0dp"
+	    android:stretchColumns="0,1" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal|fill_horizontal" >
+
+            <ImageView
+                android:id="@+id/inventory1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/mz_item_empty" />
+
+            <ImageView
+                android:id="@+id/inventory2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="center"
+                android:src="@drawable/mz_item_empty" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/inventory3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/mz_item_empty" />
+
+            <ImageView
+                android:id="@+id/inventory4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/mz_item_empty" />
+
+        </TableRow>
+
+    </TableLayout>
+
+	<ImageView
+	    android:id="@+id/ZombieView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/zombieok" />
+
+	<TextView
+	    android:id="@+id/text_zombie_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/ZombieView"
+	    android:text="Amigo"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/inventory_slot_1" android:title="Slot 1"></item>
+    <item android:id="@+id/inventory_slot_2" android:title="Slot 2"></item>
+    <item android:id="@+id/inventory_slot_3" android:title="Slot 3"></item>
+    <item android:id="@+id/inventory_slot_4" android:title="Slot 4"></item>
+    
+
+</menu>
