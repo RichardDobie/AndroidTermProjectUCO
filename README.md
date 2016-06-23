@@ -1,2 +1,2 @@
 # AndroidTermProjectUCO
-Term project from UCO Android development course
+Term project from UCO Mobile App Development course
